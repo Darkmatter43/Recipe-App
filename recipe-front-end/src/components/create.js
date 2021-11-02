@@ -2,6 +2,15 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const Create = (props) => {
+     const [recipe,setRecipe]=useState()
+     const [newName,setName]=useState()
+     const [newDescription,setDescription]=useState()
+     const [newServings,setServings]=useState()
+     const [newTime,setTime]=useState()
+     const [newIngredients,setIngredients]=useState()
+     const [newPrep,setPrep]=useState()
+     const [newImg,setImg]=useState()
+     const [newTags,setTags]=useState()
 
      const handleName = () => {
           setName(event.target.value)
@@ -24,11 +33,11 @@ const Create = (props) => {
      }
 
      const handlePreparation = () => {
-          setPreparation(event.target.value)
+          setPrep(event.target.value)
      }
 
      const handleImage = () => {
-          setImage(event.target.value)
+          setImg(event.target.value)
      }
 
      const handleTags = () => {
