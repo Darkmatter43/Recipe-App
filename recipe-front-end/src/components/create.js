@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const Create = (props) => {
-     const [recipe,setRecipe]=useState()
+     const [recipe,setRecipes]=useState()
      const [newName,setName]=useState()
      const [newDescription,setDescription]=useState()
      const [newServings,setServings]=useState()
@@ -49,14 +49,14 @@ const Create = (props) => {
           axios.post(
                'http://localhost:3001/recipes',
                {
-                    name: name,
-                    description: description,
-                    servings: servings,
-                    time: time,
-                    ingredients: ingredients,
-                    preparation: preparation,
-                    image: image,
-                    tags: tags
+                    // name: name,
+                    // description: description,
+                    // servings: servings,
+                    // time: time,
+                    // ingredients: ingredients,
+                    // preparation: preparation,
+                    // image: image,
+                    // tags: tags
                }
           ).then(() => {
                axios
@@ -70,7 +70,7 @@ const Create = (props) => {
      useEffect(() => {
           axios
                .get('http://localhost:3001/recipes')
-               .then(() => {
+               .then((response) => {
                     setRecipes(response.data)
                })
      }, [])

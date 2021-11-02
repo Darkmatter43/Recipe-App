@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 import {useState,useEffect} from 'react'
-
+import Create from './components/create';
 
 function App() {
   const [recipe,setRecipe]=useState()
@@ -15,7 +15,7 @@ function App() {
   const [newImg,setImg]=useState()
   const [newTags,setTags]=useState()
 
-    //This doesn't work yet
+    // This doesn't work yet
     // const getRecipe=()=>{
     //   axios.get('http://localhost:3001/recipes').then((response)=>{
     //     setRecipe(response.data.name)
