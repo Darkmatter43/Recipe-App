@@ -3,6 +3,7 @@ const router=express.Router()
 const Recipe=require('../models/recipes.js')
 
 
+
 router.get('/',(req,res)=>{
     Recipe.find({},(err,foundRecipe)=>{
         res.json(foundRecipe)
