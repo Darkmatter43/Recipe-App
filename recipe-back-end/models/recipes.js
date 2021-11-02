@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
 
 const recipeSchema=new mongoose.Schema({
     name:{type:String,required:true},
-    desription:String,
+    description:String,
     servings:Number,
     time:Number,
     ingredients:Array,

@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios'
+import {useState,useEffect} from 'react'
+
 
 function App() {
+  const [newName,setName]=useState()
+  const [newDescription,setDescription]=useState()
+  const [newServings,setServings]=useState()
+  const [newTime,setTime]=useState()
+  const [newIngredients,setIngredients]=useState()
+  const [newPrep,setPrep]=useState()
+  const [newImg,setImg]=useState()
+  const [newTags,setTags]=useState()
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1>Testing</h1>
+    </main>
   );
 }
 
