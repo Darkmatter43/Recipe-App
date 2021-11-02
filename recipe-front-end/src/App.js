@@ -5,6 +5,7 @@ import {useState,useEffect} from 'react'
 
 
 function App() {
+  const [recipe,setRecipe]=useState()
   const [newName,setName]=useState()
   const [newDescription,setDescription]=useState()
   const [newServings,setServings]=useState()
@@ -14,10 +15,20 @@ function App() {
   const [newImg,setImg]=useState()
   const [newTags,setTags]=useState()
 
+    //This doesn't work yet
+    // const getRecipe=()=>{
+    //   axios.get('http://localhost:3001/recipes').then((response)=>{
+    //     setRecipe(response.data.name)
+    //   })
+    // }
 
+    // useEffect(()=>{
+    //   getRecipe()
+    // },[])
   return (
     <main>
       <h1>Testing</h1>
+      {recipe}
     </main>
   );
 }
