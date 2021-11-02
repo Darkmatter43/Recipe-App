@@ -16,15 +16,15 @@ function App() {
   const [newTags,setTags]=useState()
 
     // This doesn't work yet
-    const getRecipe=()=>{
-      axios.get('http://localhost:3001/recipes').then((response)=>{
-        setRecipe(response.data.name)
-      })
-    }
+    // const getRecipe=()=>{
+    //   axios.get('http://localhost:3001/recipes').then((response)=>{
+    //     setRecipe(response.data.name)
+    //   })
+    // }
 
-    useEffect(()=>{
-      getRecipe()
-    },[])
+    // useEffect(()=>{
+    //   getRecipe()
+    // },[])
   return (
     <main>
       <h1>Testing</h1>
