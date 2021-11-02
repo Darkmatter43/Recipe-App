@@ -12,39 +12,39 @@ const Create = (props) => {
      const [newImg,setImg]=useState()
      const [newTags,setTags]=useState()
 
-     const handleName = () => {
+     const handleName = (event) => {
           setName(event.target.value)
      }
 
-     const handleDescription = () => {
+     const handleDescription = (event) => {
           setDescription(event.target.value)
      }
 
-     const handleServings = () => {
+     const handleServings = (event) => {
           setServings(event.target.value)
      }
 
-     const handleTime = () => {
+     const handleTime = (event) => {
           setTime(event.target.value)
      }
 
-     const handleIngredients = () => {
+     const handleIngredients = (event) => {
           setIngredients(event.target.value)
      }
 
-     const handlePreparation = () => {
+     const handlePreparation = (event) => {
           setPrep(event.target.value)
      }
 
-     const handleImage = () => {
+     const handleImage = (event) => {
           setImg(event.target.value)
      }
 
-     const handleTags = () => {
+     const handleTags = (event) => {
           setTags(event.target.value)
      }
 
-     const handleFormSubmit = () => {
+     const handleFormSubmit = (event) => {
           event.preventDefault()
           axios.post(
                'http://localhost:3001/recipes',
